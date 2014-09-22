@@ -10,6 +10,6 @@ Later Mosquitto delivers the published information by sensors to any subscriber 
 Repository contains:
 
   - MQTT-SN library, to be executed over a 802.15.4 WSN.
-  - Transparent gateway software, that manages MQTT-SN clients, the translation process and the comunication with Mosquitto. The gateway is the responsible for communicate the WSN with a TCP/IP network. So this software is essential in this sense.
+  - Transparent gateway software, that manages: (i) MQTT-SN clients, (ii) the translation process and (iii) the comunication with Mosquitto. The gateway is the responsible for communicate the WSN with a TCP/IP network. So this software is essential in this sense.
   - MQTT library, to be executed over any device in a TCP/IP network. In this case, in the gateway as part of translation process.
   - NodeJS server, that makes possible that any device in a external network can obtain information published by sensors through a web browser.
