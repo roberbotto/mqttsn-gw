@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'vd' ]
+2 info using npm@1.4.4
+3 info using node@v0.10.29
+4 verbose cache add [ 'vd', null ]
+5 verbose cache add name=undefined spec="vd" args=["vd",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'vd',
+6 verbose parsed url   path: 'vd',
+6 verbose parsed url   href: 'vd' }
+7 silly lockFile ad45205a-vd vd
+8 verbose lock vd /home/roberto/.npm/ad45205a-vd.lock
+9 silly lockFile ad45205a-vd vd
+10 silly lockFile ad45205a-vd vd
+11 verbose addNamed [ 'vd', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 38d343c7-vd vd@
+14 verbose lock vd@ /home/roberto/.npm/38d343c7-vd.lock
+15 silly addNameRange { name: 'vd', range: '*', hasData: false }
+16 verbose url raw vd
+17 verbose url resolving [ 'https://registry.npmjs.org/', './vd' ]
+18 verbose url resolved https://registry.npmjs.org/vd
+19 info trying registry request attempt 1 at 18:21:00
+20 http GET https://registry.npmjs.org/vd
+21 http 404 https://registry.npmjs.org/vd
+22 silly registry.get cb [ 404,
+22 silly registry.get   { date: 'Tue, 15 Jul 2014 16:21:00 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=0',
+22 silly registry.get     'content-length': '52',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-lcy1132-LCY',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1405441260.729467,VS0,VE170',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly lockFile 38d343c7-vd vd@
+24 silly lockFile 38d343c7-vd vd@
+25 error 404 'vd' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Linux 3.14-1-amd64
+27 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "vd"
+28 error cwd /home/roberto/Tools/node_modules
+29 error node -v v0.10.29
+30 error npm -v 1.4.4
+31 error code E404
+32 verbose exit [ 1, true ]

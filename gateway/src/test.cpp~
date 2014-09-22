@@ -1,0 +1,43 @@
+#include "mqtt.h"
+#include "utils.h"
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main(){
+  char *mac1="hola";
+  char *mac2="holita";
+  int res = 0;
+  std::map<char*, int> macs;
+  std::map<int, char*> socks;
+
+  macs[mac1] = 1;
+  macs.insert(std::map<char*,int>::value_type(mac2,2));
+  socks[1] = mac1;
+  socks[2] = mac2;
+  
+  std::map<char*, int>::const_iterator search = macs.find(mac1);
+  if(search != macs.end()) {
+    std::cout << "Found: " << search->first << "->" << search->second << "\n";
+  } else {
+    std::cout << "Not found!" << std::endl;
+  }
+
+  std::map<int, char*>::const_iterator search2 = socks.find(1);
+  if(search2 != socks.end()) {
+    char *aux = search2->second;
+    fprintf(stderr, "mac found: %s\n", aux);
+  }
+
+  if(macs.count(mac1) == 1)
+    res = 1;
+
+  std::cout << "Size1: " << macs.size() << std::endl;
+  macs.erase(mac1);
+  std::cout << "Size2: " << macs.size() << std::endl;
+
+  std::cout << "res = " << res << endl;
+  
+  return 1;
+}

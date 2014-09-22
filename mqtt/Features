@@ -1,0 +1,20 @@
+Supported Features
+------------------
+  - Capacidad para conectarse al servidor Mosquitto:
+      - clean/unclean sesssion.
+      - automatic/manual client Id generation.
+      - usuario y contraseña.
+  - Capacidad de publicar a un topic:
+      - qos 0
+      - qos 1
+      - qos 2
+      - uso de retain y dup
+  - Capacidad para subscribirse o quitar la subscripcion a un topic.
+  - Capacidad para elegir un KEEPALIVE y mantener la conexion usando PING.
+  - Capacidad para desconectarse.
+  - Capacidad para recibir publicaciones.
+
+Not supported Features
+----------------------
+  - Conectarse usando la caraterística last will and testament.
+  - Subscribirse y publicar usando varios topics a la vez.
